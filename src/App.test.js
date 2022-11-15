@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { queryByText, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test("Default test",()=>{
+  render(<App />)
+
+  // eslint-disable-next-line testing-library/no-debugging-utils
+  screen.debug()
+})
